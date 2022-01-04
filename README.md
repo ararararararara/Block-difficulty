@@ -43,16 +43,22 @@ function getDIfficulty(blocks){
 }
 ```
 getDIfficulty함수
+
 블럭의 헤더의 인덱스가 0 이고 (제네시스블럭)
+
 블럭의 difficulty 인덱스를 DIFFICULTY_ADJUSTMENT_INTERVAL로 나눈 나머지가 0일때..
+
 예를들어 지금 DIFFICULTY_ADJUSTMENT_INTERVAL가 10이니까 10배수...10,20,30...
+
 return getAdjustDifficulty 위에 만든 함수로 난위도 조정
+
 그외는 lastBlock.header.difficulty 리턴
 
 
 ### 타임도조정
 
 시간구하는 함수
+
 ```
 function getCurrentTimestamp(){
 	return Math.round(Date().getTime() / 1000);
@@ -72,10 +78,13 @@ function isValidTimestamp(newBlock, prevBlock){
 }
 ```
 isValidTimestamp 함수
+
 newBlock.header.timestamp - prevBlock.header.timestamp 가 60보다 크면 조정
+
 getCurrentTimestamp() - newBlock.header.timestamp 가 60보다 크면 조정
 
 checkVaildBlock.js안에 이어서
+
 isValidNewBlock 함수 안에
 
 	///////////////////////////////////추가
