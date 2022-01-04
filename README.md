@@ -1,6 +1,6 @@
 # Block-difficulty
-블럭을 채굴 (mining)할때는 난위도를 조정하는데
-difficulty 생성방법
+## 블럭을 채굴 (mining)할때는 난위도와 시간을 조정하는데
+### difficulty 생성방법
 
 ```
 const Block_GNERATION_INTERVAL = 10 //	second 단위 :초 //블럭생성간격
@@ -47,7 +47,7 @@ getDIfficulty함수
 return getAdjustDifficulty 위에 만든 함수로 난위도 조정
 그외는 lastBlock.header.difficulty 리턴
 
-# 타임도조정
+### 타임도조정
 
 시간구하는 함수
 ```
