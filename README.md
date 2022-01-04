@@ -27,7 +27,9 @@ function getAdjustDifficulty(lastBlock, blocks){
 }
 ```
 기대시간/2 보다 경과된 시간이 작으면 난위도를 올린다.
+
 경과된시간이 기대시간/2 보다 크면 난위도를 내린다.
+
 그외는 그냥 리턴
 
 ```
@@ -46,6 +48,7 @@ getDIfficulty함수
 예를들어 지금 DIFFICULTY_ADJUSTMENT_INTERVAL가 10이니까 10배수...10,20,30...
 return getAdjustDifficulty 위에 만든 함수로 난위도 조정
 그외는 lastBlock.header.difficulty 리턴
+
 
 ### 타임도조정
 
