@@ -1,4 +1,4 @@
-# Block-difficulty
+# Block-mining
 ## 블럭을 채굴 (mining)할때는 난위도와 시간을 조정하는데
 ### difficulty 생성방법
 
