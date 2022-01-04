@@ -55,7 +55,7 @@ return getAdjustDifficulty 위에 만든 함수로 난위도 조정
 그외는 lastBlock.header.difficulty 리턴
 
 
-### 타임도조정
+### 타임조정
 
 시간구하는 함수
 
